@@ -7,3 +7,14 @@
 ##
 ## Practice 02
       
+  * __Variables and Modifiers.pdf__ - Deeper dive into variables, how are they represented in memory, how much memory they take, what are modifiers, when,why,how we use them, there are 5-6 coding tasks at the end of the file. DO THEM, please :)
+  
+  * __variables.cpp__ - The file we played around with during the practice related to variables.
+  
+  * __modifiers.cpp__ - The file we played around with during the practice related to modifiers.
+  
+  * __sizeOfTypes.cpp__ - The file shows how we can use the sizeof() function to see how much memory a variable or data type(with and without) modifiers take.
+  
+  * __rangeOnDifferentTypes.cpp__ - The file shows the ranges of different data types using the limits.h header, includes ranges for data types with modifiers.
+  
+  * __swap.cpp__ - Example program on how to swap the values of two variables of type int with and without a helper variable.
