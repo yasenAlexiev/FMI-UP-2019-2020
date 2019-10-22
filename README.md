@@ -18,3 +18,6 @@
   * __rangeOnDifferentTypes.cpp__ - The file shows the ranges of different data types using the limits.h header, includes ranges for data types with modifiers.
   
   * __swap.cpp__ - Example program on how to swap the values of two variables of type int with and without a helper variable.
+  ##
+  ## Practice 03
+   * __practice_3.pdf__ - Coding tasks for the third practice.
