@@ -21,3 +21,12 @@
   ##
   ## Practice 03
    * __practice_3.pdf__ - Coding tasks for the third practice.
+   * __taskXX.cpp__ - Solutions to all the tasks from the third practice.
+  ##
+  ## Practice 04
+   * __bitwise-problems.pdf__ - Coding tasks for the fourth practice. Problems that require bitwise operators.
+   * __bitwise-problems-expanded.pdf__ - Translated the tasks to Bulgarian and made them more bitwise beginner-friendly.
+   * __visualizeBinaryNumbersWithBitset.cpp__ - Short example on how to visualize numbers in their binary format.
+   * __task_XX.cpp__ - Solutions to some of the tasks from the fourth practice.
+  ##
+  ## Practice 05
