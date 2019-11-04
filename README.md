@@ -32,7 +32,8 @@
    * __task_XX.cpp__ - Solutions to some of the tasks from the fourth practice.
   ##
   ### Practice 05
-  
+   * __Loops.pdf__ - Coding tasks for the fifth practice. Problems mainly focus on for and while loops.
+
   <h2 align="center"> Homeworks </h2>
   
   ## Easy
