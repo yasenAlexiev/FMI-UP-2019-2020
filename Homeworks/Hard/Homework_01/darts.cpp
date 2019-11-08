@@ -2,71 +2,73 @@
 
 int main()
 {
-	// We want to avoid magic numbers in our code, so we add constants for min and max values for our number.
-	const short MIN_NUMBER = 1;
-	const short MAX_NUMBER = 3000;
+	// Constant for error of equality check when comparing floating point numbers.
+	const double EPSILON = 0.001;
 
-	short number;
+	// Constants for the radiuses of each circle/ring.
+	const short INNER_CIRCLE_RADIUS = 1;
+	const short	MEDIUM_CIRCLE_RADIUS = 3;
+	const short OUTER_CIRCLE_RADIUS = 8;
 
-	std::cout << "Please enter a number in the range [1, 3000]: ";
-	std::cin >> number;
+	// Constants for points awarded on successful shot for the different circles.
+	const short INVALID_SHOT_POINTS = 0;
+	const short	OUTER_CIRCLE_POINTS = 10;
+	const short MEDIUM_CIRCLE_POINTS = OUTER_CIRCLE_POINTS * 2;
+	const short	INNER_CIRCLE_POINTS = (OUTER_CIRCLE_POINTS + MEDIUM_CIRCLE_POINTS) * 2;
 
-	if (number < MIN_NUMBER || number > MAX_NUMBER)
+	// Variables to store and validate input, for example - (3, 3) (1, 2)
+	char leftBrace, rightBrace, comma;
+	double x, y, xOffset, yOffset;
+
+	std::cout << "Please enter target coordinates and offset: ";
+	// Read first pair of coordinates (x, y).
+	std::cin >> leftBrace >> x >> comma >> y >> rightBrace;
+
+	// Check if input is in the format of (x, y).
+	if (leftBrace != '(' || comma != ',' || rightBrace != ')')
 	{
-		std::cout << "Invalid number!" << std::endl;
+		std::cout << "Invalid input." << std::endl;
 		return 1;
 	}
 
-	short firstDigit = number / 1000;
-	short secondDigit = (number / 100) % 10;
-	short thirdDigit = (number / 10) % 10;
-	short fourthDigit = number % 10;
-
-	switch (firstDigit)
+	// Read second pair of coordinates (u, v) and validate.
+	std::cin >> leftBrace >> xOffset >> comma >> yOffset >> rightBrace;
+	if (leftBrace != '(' || comma != ',' || rightBrace != ')')
 	{
-	case 1: std::cout << "M"; break;
-	case 2: std::cout << "MM"; break;
-	case 3: std::cout << "MMM"; break;
+		std::cout << "Invalid input." << std::endl;
+		return 1;
 	}
 
-	switch (secondDigit)
+	// Calculate distance between the point where the dart hits and the center of the dart board.
+	double realX = x + xOffset;
+	double realY = y + yOffset;
+	double distanceFromCenter = sqrt(realX * realX + realY * realY);
+
+	// Boolean variables to reduce clutter and increase readability of the if-statements below.
+	bool dartHitsInnerCircle = abs(distanceFromCenter - INNER_CIRCLE_RADIUS) < EPSILON;
+	bool dartHitsMediumCircle = abs(distanceFromCenter - MEDIUM_CIRCLE_RADIUS) < EPSILON;
+	bool dartHitsOuterCircle = abs(distanceFromCenter - OUTER_CIRCLE_RADIUS) < EPSILON;
+	bool dartMisses = distanceFromCenter > OUTER_CIRCLE_RADIUS;
+
+	// We need to check for equality first in order to make sure input like (0, 0) (2.99991, 0) 
+	// is 0 points instead of 20, since 2.99991 is essentially 3 for our program.
+	if (dartHitsInnerCircle || dartHitsMediumCircle || dartHitsOuterCircle || dartMisses)
 	{
-	case 1:std::cout << "C"; break;
-	case 2:std::cout << "CC"; break;
-	case 3:std::cout << "CCC"; break;
-	case 4:std::cout << "CD"; break;
-	case 5:std::cout << "D"; break;
-	case 6:std::cout << "DC"; break;
-	case 7:std::cout << "DCC"; break;
-	case 8:std::cout << "DCCC"; break;
-	case 9:std::cout << "CM"; break;
+		std::cout << INVALID_SHOT_POINTS;
+	}
+	else if (distanceFromCenter < INNER_CIRCLE_RADIUS)
+	{
+		std::cout << INNER_CIRCLE_POINTS;
+	}
+	else if (distanceFromCenter < MEDIUM_CIRCLE_RADIUS)
+	{
+		std::cout << MEDIUM_CIRCLE_POINTS;
+	}
+	else
+	{
+		std::cout << OUTER_CIRCLE_POINTS;
 	}
 
-	switch (thirdDigit)
-	{
-	case 1:std::cout << "X"; break;
-	case 2:std::cout << "XX"; break;
-	case 3:std::cout << "XXX"; break;
-	case 4:std::cout << "XL"; break;
-	case 5:std::cout << "L"; break;
-	case 6:std::cout << "LX"; break;
-	case 7:std::cout << "LXX"; break;
-	case 8:std::cout << "LXXX"; break;
-	case 9:std::cout << "XC"; break;
-	}
-
-	switch (thirdDigit)
-	{
-	case 1:std::cout << "I"; break;
-	case 2:std::cout << "II"; break;
-	case 3:std::cout << "III"; break;
-	case 4:std::cout << "IV"; break;
-	case 5:std::cout << "V"; break;
-	case 6:std::cout << "VI"; break;
-	case 7:std::cout << "VII"; break;
-	case 8:std::cout << "VIII"; break;
-	case 9:std::cout << "IX"; break;
-	}
-
+	std::cout << std::endl;
 	return 0;
 }
