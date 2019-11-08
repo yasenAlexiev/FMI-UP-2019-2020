@@ -42,7 +42,12 @@
     * __task_01_commented.cpp__ - Same as above but with added comments explaining most of the logic, also has test cases.
     * __task_01_comparison_with_epsilon.cpp__ - Solution for the first task using floating point comparison with an epsilon.
     * __task_02.cpp__ - Solution for the second task.
+    
+  * ### Homework 02
+    * __romanNumerals.cpp__ - Solution for the first task using functions to print the roman numerals.
+    * __FMI_valute.cpp__ - Solution for the second task, also using functions to calculate some values.
+   
   
   ## Hard
   * ### Homework 01
-    * Will be added after the task deadline ends.
+    * __darts.cpp__ - Solution for the task with input validations, usage of constant modifiers, etc.
