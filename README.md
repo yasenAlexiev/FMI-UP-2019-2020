@@ -34,6 +34,10 @@
   ### Practice 05
    * __Loops.pdf__ - Coding tasks for the fifth practice. Problems mainly focus on for and while loops.
 
+  ##
+  ### Practice 06
+   * __Functions and loops.pdf__ - Coding tasks for the sixth practice. The problems are from the fifth practice. They now require solutions with functions. A few new problems are also added.
+
   <h2 align="center"> Homeworks </h2>
   
   ## Easy
