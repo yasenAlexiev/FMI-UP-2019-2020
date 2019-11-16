@@ -1,17 +1,17 @@
 #include <iostream>
 
 int main() {
-	unsigned number, reverceNumber = 0;
+	unsigned number, reverseNumber = 0;
 	std::cin >> number;
 
 	unsigned buff = number;
 	while(buff > 0) {
-		reverceNumber += buff % 10;
-		reverceNumber *= 10;
+		reverseNumber += buff % 10;
+		reverseNumber *= 10;
 		buff /= 10;
 	}
-	reverceNumber /= 10;
-	std::cout << (reverceNumber == number ? "Yup" : "Nope") << std::endl;
+	reverseNumber /= 10;
+	std::cout << (reverseNumber == number ? "Yup" : "Nope") << std::endl;
 
 	return 0;
 }
