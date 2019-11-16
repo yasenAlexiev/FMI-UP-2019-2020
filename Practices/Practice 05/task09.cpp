@@ -2,23 +2,20 @@
 
 int main() {
 	int a, b, c, n;
-	std::cin >> n >> a >> b >> c;
+	std::cin >> n >> a >> b;
 	bool check;	
-	if(a >= b && b <= c) {
+	if(a >= b) {
 		check = true;				
-	} else if(a <= b && b >= c) {
-		check = false;
 	} else {
-		std::cout << "Nope" << std::endl;
-		return -1;
+		check = false;
 	}
 
-	for(int i = 0; i < n-3; ++i) {
-		
-		if(!check && a >= b && b <= c) {
-			check = true;
-		} else if(check && a <= b && b >= c) {
+	for(int i = 0; i < n-2; ++i) {
+		std::cin >> c;	
+		if(check && b <= c) {
 			check = false;
+		} else if(!check && b >= c) {
+			check = true;
 		} else {
 			std::cout << "Nope" << std::endl;
 			return -1;
@@ -26,7 +23,6 @@ int main() {
 
 		a = b;
 		b = c;
-		std::cin >> c;
 	}
 	
 	std::cout << "Yup" << std::endl;
