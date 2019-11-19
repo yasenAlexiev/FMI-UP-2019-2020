@@ -62,3 +62,8 @@
   ## Hard
   * ### Homework 01
     * __darts.cpp__ - Solution for the task with input validations, usage of constant modifiers, etc.
+    
+  * ### Homework 02
+    * __footballPerformance.cpp__ - Solution for hard homework 2. Autor Radoslav Hubenov, GitHub: @rrhubenov .
+    
+    
