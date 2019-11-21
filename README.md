@@ -39,6 +39,11 @@
    * __Functions and loops.pdf__ - Coding tasks for the sixth practice. The problems are from the fifth practice. They now require solutions with functions. A few new problems are also added.
 
   <h2 align="center"> Seminars </h2>
+  
+  ### Seminar 06
+   * __what_is_function_and_how_do_I_create_one.pdf__ - Introductory explanation of what is a function in bulgarian.
+   * __passing_parameters_by_reference.cpp__ - Example of passing variables by reference, mainly used as a reference(pun intended).
+   * __arrays.cpp__ - Introduction to arrays and some basic operations with them. Contains lots of comments, also mainly used as a reference for what we talked about.
 
   <h2 align="center"> Homeworks </h2>
   
@@ -58,6 +63,9 @@
   * ### Homework 01
     * __darts.cpp__ - Solution for the task with input validations, usage of constant modifiers, etc.
 
+  * ### Homework 02
+    * __footballPerformance.cpp__ - Solution for hard homework 2. Autor Radoslav Hubenov, GitHub: @rrhubenov .
+    
   <h2 align="center"> Other </h2>
   
   ## Additional practice - 22.11.2019
