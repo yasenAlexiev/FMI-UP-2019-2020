@@ -57,3 +57,7 @@
   ## Hard
   * ### Homework 01
     * __darts.cpp__ - Solution for the task with input validations, usage of constant modifiers, etc.
+
+  <h2 align="center"> Other </h2>
+  
+  ## Additional practice - 22.11.2019
