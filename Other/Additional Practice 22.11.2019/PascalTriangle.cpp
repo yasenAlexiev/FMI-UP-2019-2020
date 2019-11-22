@@ -18,18 +18,19 @@ int main() {
 	int row2[MAX_SIZE_OF_ROW] = { 0, };
 
 	row1[0] = 1;
-	int lastValue;
+	row2[0] = 1;
+	printArray(row1, 1);
 	for(int i = 1; i < n; ++i) {
 		if(i % 2 == 0) {	
-			for(int j = 1; j <= i; ++j) {
+			for(int j = 0; j < n; ++j) {
 				row1[j] = row2[j] + row2[j-1];
 			}
-			printArray(row1, i);
+			printArray(row1, i+1);
 		} else {	
-			for(int j = 1; j <= i; ++j) {
+			for(int j = 1; j < n; ++j) {
 				row2[j] = row1[j] + row1[j-1];
 			}
-			printArray(row2, i);
+			printArray(row2, i+1);
 		}
 	}
 
