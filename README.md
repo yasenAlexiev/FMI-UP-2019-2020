@@ -38,6 +38,10 @@
   ### Practice 06
    * __Functions and loops.pdf__ - Coding tasks for the sixth practice. The problems are from the fifth practice. They now require solutions with functions. A few new problems are also added.
 
+  ##
+  ### Practice 06
+   * __2D_Arrays_Tasks.pdf__ - Coding tasks for the eight practice. Problems focus on 2D arrays. Two links to tasks related to 1D arrays at the botttom.
+
   <h2 align="center"> Seminars </h2>
   
   ### Seminar 06
