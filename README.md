@@ -68,7 +68,7 @@
   
   * ### Homework 04
     * __goldbachConjecture.cpp__ - Solution for the first task.
-    * ___functionsLibrary.cpp__ - Solution for the second task.
+    * __functionsLibrary.cpp__ - Solution for the second task.
    
   
   ## Hard
