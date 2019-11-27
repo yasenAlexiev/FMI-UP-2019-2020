@@ -296,6 +296,7 @@ double cosine(double radians)
 
 	return approximateSequence(radians, 40);
 }
+
 double sine(double radians)
 {
 	double cosineApproximation = cosine(radians);
@@ -312,6 +313,7 @@ double tangent(double radians)
 
 	return sineApproximation / cosineApproximation;
 }
+
 double cotangent(double radians)
 {
 	return 1.0 / tangent(radians);
