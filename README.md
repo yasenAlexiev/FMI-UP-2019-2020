@@ -38,6 +38,10 @@
   ### Practice 06
    * __Functions and loops.pdf__ - Coding tasks for the sixth practice. The problems are from the fifth practice. They now require solutions with functions. A few new problems are also added.
 
+  ##
+  ### Practice 08
+   * __2D_Arrays_Tasks.pdf__ - Coding tasks for the eight practice. Problems focus on 2D arrays. Two links to tasks related to 1D arrays at the botttom.
+
   <h2 align="center"> Seminars </h2>
   
   ### Seminar 06
@@ -57,6 +61,14 @@
   * ### Homework 02
     * __romanNumerals.cpp__ - Solution for the first task using functions to print the roman numerals.
     * __FMI_valute.cpp__ - Solution for the second task, also using functions to calculate some values.
+  
+  * ### Homework 03
+    * __toBeAdded.cpp__ - dummy text.
+    * __toBeAdded.cpp__ - dummy text.
+  
+  * ### Homework 04
+    * __goldbachConjecture.cpp__ - Solution for the first task.
+    * __functionsLibrary.cpp__ - Solution for the second task.
    
   
   ## Hard
