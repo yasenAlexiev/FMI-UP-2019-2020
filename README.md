@@ -61,6 +61,14 @@
   * ### Homework 02
     * __romanNumerals.cpp__ - Solution for the first task using functions to print the roman numerals.
     * __FMI_valute.cpp__ - Solution for the second task, also using functions to calculate some values.
+  
+  * ### Homework 03
+    * __toBeAdded.cpp__ - dummy text.
+    * __toBeAdded.cpp__ - dummy text.
+  
+  * ### Homework 04
+    * __goldbachConjecture.cpp__ - Solution for the first task.
+    * __functionsLibrary.cpp__ - Solution for the second task.
    
   
   ## Hard
