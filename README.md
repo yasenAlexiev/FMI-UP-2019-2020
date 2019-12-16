@@ -39,8 +39,24 @@
    * __Functions and loops.pdf__ - Coding tasks for the sixth practice. The problems are from the fifth practice. They now require solutions with functions. A few new problems are also added.
 
   ##
+  ### Practice 07
+   * __Arrays.pdf__ - Coding tasks for the seventh practice. Problems focus on arrays.
+
+  ##
   ### Practice 08
    * __2D_Arrays_Tasks.pdf__ - Coding tasks for the eight practice. Problems focus on 2D arrays. Two links to tasks related to 1D arrays at the botttom.
+
+  ##
+  ### Practice 09
+   * __TASKS_algorithmsOnArrays.pdf__ - Coding tasks for the ninth practice. Problems focus on algorithms on arrays.
+
+  ##
+  ### Practice 10
+   * __Pointers.pdf__ - Coding tasks for the tenth practice. Problems focus on pointers and introduction to dynamic memory.
+
+  ##
+  ### Practice 11
+   * __cstrings_tasks.pdf__ - Coding tasks for the eleventh practice. Problems focus mainly on strings and dynamic memory.
 
   <h2 align="center"> Seminars </h2>
   
