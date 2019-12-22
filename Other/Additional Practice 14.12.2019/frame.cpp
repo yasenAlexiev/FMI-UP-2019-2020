@@ -47,11 +47,16 @@ void print_matrix(unsigned int mat[][MAX_COLS], size_t n, size_t m) {
 	}
 }
 
-void print_frame(unsigned int mat[][MAX_COLS], size_t m, size_t n) {
-
-	for (size_t row = 0; row < m; row++) {
-		for (size_t col = 0; col < n; col++) {
-			//??????	
+void print_frame(unsigned int mat[][MAX_COLS], size_t n, size_t m) {
+	
+	int cell_size = find_max_cell_size(mat, n, m);
+	for (size_t row = 0; row < n; row++) {
+		for (size_t col = 0; col < m; col++) {
+			if((row == 0 || row == n - 1) || (col == 0 || col == m - 1)) {
+				std::cout << std::setw(cell_size) << mat[row][col] << ' ';
+			} else {
+				std::cout << std::setw(cell_size + 1) << ' ';
+			}
 		}	
 		std::cout << std::endl;
 	}
