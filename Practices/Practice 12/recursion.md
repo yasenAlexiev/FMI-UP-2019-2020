@@ -20,10 +20,10 @@ isPrimeRecursive(6) --> false
 ### Задача 3.
 Напишете функция ```int primeProduct(int count)```, която намира произведението на първите N прости числа. 
 ```javascript
-primeProduct(3) --> 10
-primeProduct(4) --> 17
-primeProduct(5) --> 28
-primeProduct(6) --> 41
+primeProduct(3) --> 30
+primeProduct(4) --> 210
+primeProduct(5) --> 2310
+primeProduct(6) --> 30030
 ```
 ### Задача 4.
 Напишете функция ```int factorial(int number)```, която намира факториел на дадено число N - рекурсивно.
@@ -37,7 +37,7 @@ factorial(5) --> 120
 ```javascript
 digitSum(1) --> 1
 digitSum(12) --> 3
-digitSum(123) --> 5
+digitSum(123) --> 6
 digitSum(555) --> 15
 ```
 ### Задача 6.

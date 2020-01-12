@@ -83,10 +83,10 @@ int main() {
 	*/
 	
 	/* Task 3
+	*/
 	for(int i = 0; i < 10; ++i) {	
 		std::cout << "Product of the first " << i << " numbers is: " << primeProduct(i) << std::endl;
 	}
-	*/
 
 	/* Task 4
 	for(int i = 0; i < 10; ++i) {	
@@ -100,11 +100,11 @@ int main() {
 	}
 	*/
 
-		
+	/* Task 6		
 	for(int i = 0; i < 10; ++i) {	
 		std::cout << i << " number of fibonacii is " << nthFibonacci(i) << std::endl;
 	}
-
+	*/
 
 	return 0;
 }
