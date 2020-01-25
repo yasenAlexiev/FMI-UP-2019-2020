@@ -16,6 +16,28 @@ void removeX(char * source, char * destination) {
 	}
 }
 
+void cleanSingleLetter(char* text) {
+	if(!*text) {
+		return;
+	}
+	*text = *(text+1);
+	cleanSingleLetter(text+1);
+}
+
+//task 4
+void cleanText(char * text) {
+	if(!*text) {
+		return;
+	}
+
+	if(*text == *(text+1)) {
+		cleanSingleLetter(text);
+		cleanText(text);
+	} else {	
+		cleanText(text+1);
+	}	
+
+}
 
 
 int main () {
@@ -29,6 +51,8 @@ int main () {
 
 	std::cout << dest << std::endl;
 
+	cleanText(src);
+	std::cout << src << std::endl;
 
 	return 0;
 }
