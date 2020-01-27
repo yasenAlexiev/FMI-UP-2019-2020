@@ -3,20 +3,38 @@
 #define MAX_BUFFER_SIZE (1000)
 
 /*
-Напишете програма, която въвежда от потребителя произволен текст с дължина до 1000 символа и го съхранява в масив от тип char с подходящ размер. Текстът може да съдържа произволни символи. След това програмата ви трябва да изведе на екрана, на отделни редове, всички думи, които се срещат в текста, като срещу всяка дума се посочи броят на нейните срещания. При извеждането, за всяка дума трябва да има точно един ред (т.е. една дума не трябва да се извежда по няколко пъти).
+Напишете програма, която въвежда от потребителя произволен текст с дължина до 1000 символа и го съхранява в масив
+от тип char с подходящ размер. Текстът може да съдържа произволни символи. След това програмата ви трябва да
+изведе на екрана, на отделни редове, всички думи, които се срещат в текста, като срещу всяка дума се посочи броят
+на нейните срещания. При извеждането, за всяка дума трябва да има точно един ред (т.е. една дума не трябва да се
+извежда по няколко пъти).
 
 
 
-За целите на задачата считаме, че думите в текста са последователности от произволни непразни (non-whitespace) символи, които са отделени една от друга с един или повече празни символи. Например: 
-Примерно изпълнение 1: 
-Enter a text: One Two Three   Four    One Two One   Two One – 3 time(s) Two – 3 time(s) Three – 1 time(s) Fout – 1 time(s) 
-	Примерно изпълнение 2: 
-	Enter a text: 8u8  abc123+_+_     *     &yy&a__,bc  8u8 8u8 – 2 time(s) abc123+_+_ - 1 time(s) * - 1  time(s) &yy&a__,bc – 1 time(s) 
-	Примерно изпълнение 3: 
-	Enter a text: JustOneLongWord JustOneLongWord – 1 time(s) 
+За целите на задачата считаме, че думите в текста са последователности от произволни непразни (non-whitespace) символи,
+които са отделени една от друга с един или повече празни символи. Например:
+
+Примерно изпълнение 1:
+Enter a text: One Two Three   Four    One Two One   Two
+	One – 3 time(s)
+	Two – 3 time(s)
+	Three – 1 time(s)
+	Fout – 1 time(s)
+
+Примерно изпълнение 2:
+	Enter a text: 8u8  abc123+_+_     *     &yy&a__,bc  8u8 
+	8u8 – 2 time(s) 
+	abc123+_+_ - 1 time(s) 
+ 	* - 1  time(s) 
+ 	&yy&a__,bc – 1 time(s)
+
+Примерно изпълнение 3:
+	Enter a text: JustOneLongWord 
+	JustOneLongWord – 1 time(s)
 	 
-	Примерно изпълнение 4: 
-	Enter a text:  No words (empty string)
+Примерно изпълнение 4:
+	Enter a text:
+	No words (empty string)
 */
 
 void deleteDictionary(char** dictionary, size_t size) {
@@ -139,8 +157,11 @@ void siftAndCountWords(char* str) {
 		}
 		singleWord = strtok(nullptr, " ");
 	}
-
-	printDictionary(dictionary, countArray, size);
+	if(size > 0) {	
+		printDictionary(dictionary, countArray, size);
+	} else {
+		std::cout << "No words (empty string)" << std::endl;
+	}
 
 	deleteDictionary(dictionary, size);
 	delete[] countArray;
